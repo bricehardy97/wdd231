@@ -12,12 +12,16 @@
  }
 nav{
     display:block;
-    background-color: #284b63 ;
+    background-color: #632844 ;
+    padding: 10px;
+    color:#ffffff;
+    
     
     
 }
 ul{
-    background: color #284b63 ;
+    background-color: #282963 ;
+    color:#ffffff;
 }
 
 }
