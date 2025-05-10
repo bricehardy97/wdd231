@@ -21,6 +21,7 @@ header span {
 
 nav {
     display: none;
+
 }
 
 ul {
@@ -33,7 +34,7 @@ ul {
 
 ul a {
     text-decoration: none;
-    color: #454545;
+    color: #ffffff;
 }
 
 footer {
