@@ -1,15 +1,15 @@
 @media (min-width: 600px){
- #mainContent{
+#mainContent{
     display:grid;
     grid-template-columns: 2fr 1fr;
  }
- header{
+header{
     background-color: #284b63;
-    #hamburger{
-        display:none;
-        
-    }
- }
+  }
+#hamburger{
+    display:none;
+    
+}
 nav{
     display:block;
     background-color: #632844 ;

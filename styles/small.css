@@ -1,91 +1,85 @@
 header {
     background-color: aqua;
     text-align: center;
-    span{
-        font-weight: 700;
-        font-size: 50px;
-        color: #ffffff;
-        position:absolute;
-        top: 50px;
-      
-        
-    }
-    #hamburger{
-        position:absolute;
-        top: 10px;
-        right: 40px;
-        max-width: 50px;
-    }
-
-}
-nav{
-    display:none;
-    
+    position: relative;
 }
 
+header span {
+    font-weight: 700;
+    font-size: 50px;
+    color: #ffffff;
+    position: absolute;
+    top: 50px;
+}
 
-ul{
+#hamburger {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    max-width: 50px;
+}
+
+nav {
+    display: none;
+}
+
+ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     list-style: none;
-    color: #4545;
-    a{
-        text-decoration: none;
-     }
-
+    padding: 0;
+    margin: 0;
 }
 
+ul a {
+    text-decoration: none;
+    color: #454545;
+}
 
-
-footer{
+footer {
     text-align: center;
 }
 
-#mainContent{
-   
-
-    section{
-        box-shadow: black 0 0 10px;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-        text-align: center;
-
-        
-    }
-    #certificate{
-        grid-column: span 3;
-        text-align: center;
-        .menu{
-            border-bottom: black solid 1px;
-            display:grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            div{
-                background-color: #1e152a;
-                margin:10px;
-                padding:10px;
-                border-radius: 10px;
-                color:aliceblue
-
-            }
-
-
-        }
-        .cards{
-            div{
-            background-color: #a3b18a;
-            margin:10px;
-            padding:10px;
-            border-radius: 10px;
-            }
-        }
-    }
+#mainContent section {
+    box-shadow: 0 0 10px black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
-body{
+
+#certificate {
+    grid-column: span 3;
+    text-align: center;
+}
+
+#certificate .menu {
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#certificate .menu div {
+    background-color: #1e152a;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+#certificate .cards div {
+    background-color: #a3b18a;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body {
     max-width: 1200px;
-    
+    margin: auto;
 }
-html{
-    display:flex;
+
+html {
+    display: flex;
     justify-content: center;
 }
