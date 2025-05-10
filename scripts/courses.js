@@ -12,7 +12,7 @@ const courses = [
     const buttons = document.querySelectorAll(".menuButton");
   
     function displayCourses(courseArray) {
-      cardContainer.innerHTML = ""; // Clear old content
+      cardContainer.innerHTML = ""; 
   
       courseArray.forEach(course => {
         const card = document.createElement("div");
@@ -27,7 +27,6 @@ const courses = [
         cardContainer.appendChild(card);
       });
   
-      // Add/update total credits
       const totalCredits = courseArray.reduce((sum, c) => sum + c.credits, 0);
       let totalEl = document.querySelector("#certificate .totalCredits");
       if (!totalEl) {
@@ -38,7 +37,6 @@ const courses = [
       totalEl.textContent = `Total Credits: ${totalCredits}`;
     }
   
-    // Button filtering
     buttons.forEach(button => {
       button.addEventListener("click", () => {
         const filter = button.textContent.trim();
@@ -54,6 +52,6 @@ const courses = [
       });
     });
   
-    // Initial display
+   
     displayCourses(courses);
   });
