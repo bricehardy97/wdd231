@@ -1,0 +1,23 @@
+{
+    "family_name": "Hardy",
+    "move_in_date": "2022-10-06",
+    "number_of_people": 3,
+    "visited_by_bishopric": false,
+    "family_members": [
+      {
+        "name": "Brice Hardy",
+        "gender": "Male",
+        "birthdate": "1997-08-03"
+      },
+      {
+        "name": "Natalie Hardy",
+        "gender": "Female",
+        "birthdate": "2000-06-26"
+      },
+      {
+        "name": "Cooper Hardy",
+        "gender": "Male",
+        "birthdate": "2019-08-13"
+      }
+    ]
+  }
