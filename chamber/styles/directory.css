@@ -25,24 +25,20 @@ nav{
     position: absolute;
     right: 20px;
 }
-.card{
+.card {
     background-color: aqua;
     display:flex;
     flex-direction: column;
     margin-bottom: 10px;
    
-    .title{
+.card .title {
         background-color: blue;
         text-align: center;
         color:azure;
         padding: 10px;
-        
-    
-
     }
-    .text{
+.card .text{
         padding: 10px;
-       
     }
 
 }
