@@ -71,3 +71,20 @@ function getMembershipLevel(level) {
 }
 
 fetchMembers();
+const cardBtn = document.getElementById('cardView');
+const listBtn = document.getElementById('listView');
+const membersContainer = document.querySelector('#members');
+
+cardBtn.addEventListener('click', () => {
+  membersContainer.classList.add('card-view');
+  membersContainer.classList.remove('list-view');
+  cardBtn.classList.add('active');
+  listBtn.classList.remove('active');
+});
+
+listBtn.addEventListener('click', () => {
+  membersContainer.classList.add('list-view');
+  membersContainer.classList.remove('card-view');
+  listBtn.classList.add('active');
+  cardBtn.classList.remove('active');
+});
