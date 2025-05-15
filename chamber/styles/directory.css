@@ -109,6 +109,16 @@ nav{
       justify-content: center;
       gap: 2rem;
       padding: 1rem;
+      list-style-type: none;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5rem;
+      padding: 1rem;
+      border-radius: 10px;
+
+      
     }
   
     nav a {
@@ -117,6 +127,15 @@ nav{
   
     h1 {
       font-size: 2.5rem;
+      
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5rem;
+      padding: 1rem;
+      border-radius: 10px;
+
     }
   
     h2 {
@@ -175,5 +194,24 @@ nav{
         width: 100px;
         height: auto;
       }
+      .spanishfork  img{
+        width: 100%;
+        height: auto;
+        display: block;
+     
+    
+        }
+        nav{
+            top: 10px;
+        }
+      footer{
+        background-color:#3c6e71 ;
+      }
+      html{
+        background-color:#a3b18a;;
+      }
+        
+
+      
       
   
