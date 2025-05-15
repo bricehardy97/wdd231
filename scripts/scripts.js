@@ -1,5 +1,7 @@
 
-document.addEventListener("DOMContentLoaded", () => {
+
+function start() {
+  document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.getElementById("hamburger");
     const nav = document.querySelector("nav ul");
   
@@ -7,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
       nav.classList.toggle("open");
     });
   });
+}
 
-
-
+start();
 
 
 

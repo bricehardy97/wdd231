@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Maple Creek Dental",
+    "address": "1106 E 930 S, Spanish Fork, UT 84660",
+    "phone": "801-798-3600",
+    "website": "https://maplecreekdental.com",
+    "image": "maple-creek.webp",
+    "membership": 3,
+    "description": "Top-rated family dentistry with a gentle touch."
+  },
+  {
+    "name": "Two Jacks Pizza",
+    "address": "30 N Main St, Spanish Fork, UT 84660",
+    "phone": "801-798-8601",
+    "website": "https://www.twojackspizza.com/",
+    "image": "2jacks.webp",
+    "membership": 2,
+    "description": "Specialists in Quality Hand Tossed Pizza."
+  },
+  {
+    "name": "Preloved",
+    "address": "244 N Main St, Spanish Fork, UT 84660",
+    "phone": "385-221-9540",
+    "website": "https://preloved.love/",
+    "image": "preloved.webp",
+    "membership": 1,
+    "description": "The Better Way To Resell Your Closet And Thrift"
+  },
+  {
+    "name": "Ace Hardware",
+    "address": "1006 N Main St, Spanish Fork, UT 84660",
+    "phone": "801-798-2345",
+    "website": "https://acehardware.com",
+    "image": "ace.webp",
+    "membership": 2,
+    "description": "Locally owned hardware store with top-tier service."
+  },
+  {
+    "name": "J-Mart Printing ",
+    "address": "280 N Main St, Spanish Fork, UT 84660",
+    "phone": "801-798-6816",
+    "website": "https://jmartprint.com/",
+    "image": "jmart.webp",
+    "membership": 3,
+    "description": "Helping clients with their printing, copying & banner needs."
+  },
+  {
+    "name": "Canyon View Medical",
+    "address": "336 W 100 S, Spanish Fork, UT 84660",
+    "phone": " (801) 798-7301",
+    "website": "https://canyonviewmedical.com/specialties/family-medicine/locations/spanish-fork/?utm_source=GMBSocialClimb&utm_medium=CanyonViewFamilyMedicine-SpanishFork",
+    "image": "canyonviewmedical.webp",
+    "membership": 1,
+    "description": "Expert Medical Care For You."
+  },
+  {
+    "name": "Utah Valley Pediatrics",
+    "address": "701 E 700 N Spanish Fork, UT 84660",
+    "phone": "801-794-7947",
+    "website": "https://www.uvpediatrics.com/",
+    "image": "UVP.webp",
+    "membership": 2,
+    "description": "Top Utah County Pediatricians For Over a Half Century"
+  }
+]

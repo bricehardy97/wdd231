@@ -1,0 +1,68 @@
+dy>
+    <header>
+        <img id="hamburger" src="images/hamburger.webp" alt="Emoji of burger" height="20">
+        <h1>Timbuktu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+/* small css */
+@media (max-width: 600px){
+
+body, main, footer,header,section{
+    border: black solid 1px;
+    
+
+}
+html{
+    padding: 10px;
+}
+section, header,footer{
+    padding: 10px;
+}
+nav{
+    transition: all 1s;
+    overflow: hidden;
+    
+    max-height: 0;
+
+    &.open {
+      max-height:100px;
+        
+    }
+}
+#hamburger{
+    position: absolute;
+    right: 20px;
+}
+.card{
+    background-color: aqua;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+   
+    .title{
+        background-color: blue;
+        text-align: center;
+        color:azure;
+        padding: 10px;
+        
+    
+
+    }
+    .text{
+        padding: 10px;
+       
+    }
+
+}
+}
