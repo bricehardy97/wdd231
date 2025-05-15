@@ -27,23 +27,23 @@
       right: 20px;
     }
   
-    .card {
-      background-color: aqua;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 10px;
-    }
+.card {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
   
-    .card .title {
-      background-color: blue;
-      text-align: center;
-      color: azure;
-      padding: 10px;
-    }
+.card .title {
+    background-color: blue;
+    text-align: center;
+    color: azure;
+    padding: 10px;
+}
   
-    .card .text {
-      padding: 10px;
-    }
+.card .text {
+    padding: 10px;
+}
   
     .members-grid {
       display: grid;
