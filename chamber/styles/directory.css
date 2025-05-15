@@ -15,12 +15,10 @@ section, header,footer{
 nav{
     transition: all 1s;
     overflow: hidden;
-    
     max-height: 0;
-
-    &.open {
+}
+    nav.open {
       max-height:100px;
-        
     }
 }
 #hamburger{
