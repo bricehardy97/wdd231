@@ -3,6 +3,21 @@
     body, main, footer, header, section {
       border: black solid 1px;
     }
+    .hero img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    h1{
+        font-size: 1.0rem;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1rem;
+        border-radius: 10px;
+        
+    }
   
     html {
       padding: 10px;
@@ -11,7 +26,11 @@
     section, header, footer {
       padding: 10px;
     }
-  
+    header {
+        text-align: center;
+        font-size: 1 rem;
+
+    }
     nav {
       transition: all 1s;
       overflow: hidden;
@@ -89,6 +108,15 @@
     .member-card:nth-child(7) {
       grid-column: 2 / 3;
     }
+    h1 {
+        font-size: 2.3rem;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1rem;
+        border-radius: 10px;
+      }
   }
   
   /* General Styles (applies to all screens unless overridden above) */
@@ -120,15 +148,7 @@
     font-size: 1.2rem;
   }
   
-  h1 {
-    font-size: 2.3rem;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1rem;
-    border-radius: 10px;
-  }
+ 
   
   h2 {
     font-size: 2rem;

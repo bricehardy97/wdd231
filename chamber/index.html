@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to the Spanish Fork Chamber of Commerce home page. Stay informed, join us, and explore our community.">
+  <meta name="author" content="Brice Hardy" />
+  <title>Spanish Fork Chamber | Home</title>
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="icon" href="images/favicon.ico" />
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Spanish Fork Chamber Logo" />
+    <button id="hamburger" aria-label="Toggle menu">☰</button>
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/spanishfork.webp" alt="Spanish Fork landscape" />
+    <a href="join.html" class="cta">Join the Chamber</a>
+  </section>
+
+  <main>
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <div id="events-container">
+        <!-- Fill in static or dynamic content -->
+        <p>No events currently. Check back soon!</p>
+      </div>
+    </section>
+
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <div id="current-weather">
+        <!-- Weather API injected -->
+      </div>
+
+      <h3>3-Day Forecast</h3>
+      <div id="forecast">
+        <!-- Weather API injected -->
+      </div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Business Spotlights</h2>
+      <div id="spotlight-container">
+        <!-- Spotlight members injected -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Spanish Fork Chamber of Commerce</strong><br>
+      40 N Main St, Spanish Fork, UT 84660<br>
+      info@spanishforkchamber.org | (801) 555-1234</p>
+    <div class="social-icons">
+      <a href="#"><img src="images/youtube.webp" alt="YouTube" /></a>
+      <a href="#"><img src="images/twitter.webp" alt="Twitter" /></a>
+      <a href="#"><img src="images/linkedin.webp" alt="LinkedIn" /></a>
+    </div>
+    <span id="copyright"></span>
+    <span id="lastModified"></span>
+  </footer>
+</body>
+
+</html>

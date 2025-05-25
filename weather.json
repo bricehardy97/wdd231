@@ -1,0 +1,12 @@
+{
+    "main": {
+      "temp": 55.36
+    },
+    "weather": [
+      {
+        "description": "light rain",
+        "icon": "10d"
+      }
+    ]
+  }
+  
