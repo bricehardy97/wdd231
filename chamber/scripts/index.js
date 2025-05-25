@@ -75,6 +75,3 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('spotlight-container').innerHTML = `<p>Unable to load spotlights.</p>`;
     }
   }
-  
-  console.log(members); // after fetching
-console.log(spotlightMembers); // after filtering
