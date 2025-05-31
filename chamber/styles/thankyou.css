@@ -1,0 +1,35 @@
+.thankyou-content {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .summary {
+    background-color: #f1f1f1;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .summary p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #005f73;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .cta:hover {
+    background-color: #0a9396;
+  }
+  
