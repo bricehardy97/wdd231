@@ -1,0 +1,50 @@
+[
+    {
+      "title": "Red Ledges",
+      "address": "Diamond Fork Rd, Springville, UT 84663",
+      "description": "Kid-friendly canyon area offering hiking, rock climbing, and rappelling, plus picnic tables.",
+      "image": "images/red-ledges.webp"
+    },
+    {
+      "title": "Spanish Fork River Trail",
+      "address": "1000 S Main St, Spanish Fork, UT 84660",
+      "description": "Enjoy this 12.1-mile out-and-back trail.",
+      "image": "images/river-trail.webp"
+    },
+    {
+        "title": "Spanish Oaks Reservoir",
+        "address": "2931 South Spanish Oaks Drive, Spanish Fork, Utah 84660",
+        "description": "A popular location for recreation, including swimming, fishing, and kayaking.",
+        "image": "images/reservoir.webp"
+    },
+    {
+        "title": "Adventure Heights All - Abilities Park",
+        "address": "1321 E Canyon Rd, Spanish Fork, UT 84660",
+        "description": "All-abilities park with accessible playground equipment, a splash pad, pavilions, and picnic tables.",
+        "image": "images/all-abilities.webp"
+    },
+    {
+        "title": "Shri Shri Radha Krishna Temple",
+        "address": "311 W 8500 S, Spanish Fork, UT 84660",
+        "description": "Built in 1998, this Krishna temple features an amphitheater, a gift shop & a vegetarian buffet.",
+        "image": "images/temple.webp"
+    },
+    {
+        "title": "Gateway Parks Spanish Fork",
+        "address": "2300 E Powerhouse Rd, Spanish Fork, UT 84660",
+        "description": "Recreational area offering snow tubing and skiing, plus kid-friendly activities.",
+        "image": "images/gateway.webp"
+    },
+    {
+        "title": "Spanish Fork Library",
+        "address": "80 S Main St, Spanish Fork, UT 84660",
+        "description": "Public library offering a large selection of books and media, along with activities and programs.",
+        "image": "images/library.webp"
+    },
+    {
+        "title": "Spanish Fork Fairgrounds",
+        "address": "475 S Main St, Spanish Fork, UT 84660",
+        "description": "Fairground hosting rodeos, demolition derbies, and other large events.",
+        "image": "images/rodeo.webp"
+    }
+]
