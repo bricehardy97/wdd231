@@ -1,54 +1,87 @@
 :root {
-  --main-color: #2f4f4f; /* Dark Slate Gray */
-  --accent-color: #b8860b; /* Dark Goldenrod */
+    --main-color: #2f4f4f; /* Dark Slate Gray */
+    --accent-color: #b8860b; /* Dark Goldenrod */
+  }
   
-}
-body {
+  body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f9f9f9;
     color: #333;
     margin: 0;
     padding: 2rem;
   }
-
+  
   h1, h2 {
     color: var(--main-color);
     font-family: 'Merriweather', serif;
   }
-
+  
   h1 {
     border-bottom: 2px solid var(--accent-color);
     padding-bottom: 0.3rem;
   }
-
+  
   section {
     margin-bottom: 2rem;
   }
-
+  
   code {
     background-color: #eee;
     padding: 0.1rem 0.3rem;
     border-radius: 4px;
   }
-
+  
   .color-box {
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 0.5rem;
     vertical-align: middle;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   }
-
+  
+  /* Optional hover effect for interactivity */
+  .color-box:hover {
+    outline: 1px dashed var(--accent-color);
+    cursor: pointer;
+  }
+  
+  /* Wireframe Container */
+  .wireframe {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
   .mobile, .desktop {
     max-width: 600px;
     border: 1px solid #ccc;
     padding: 1rem;
     background-color: white;
     margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   }
-
+  
+  /* Image Styling */
   .wireframe img {
     max-width: 100%;
     height: auto;
     border: 1px solid #bbb;
+    display: block;
+    margin: 0 auto;
   }
+  
+  /* Responsive Enhancements */
+  @media (max-width: 640px) {
+    body {
+      padding: 1rem;
+    }
+  
+    .mobile, .desktop {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
