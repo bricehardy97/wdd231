@@ -48,88 +48,90 @@ const members = [
       "description": "Fairground hosting rodeos, demolition derbies, and other large events.",
       "image": "images/rodeo.webp"
     }
-];
-
-// Container element
-const membersSection = document.getElementById('members');
-
-// Function to create card view markup
-function createCard(member) {
-  return `
-    <article class="member-card" tabindex="0">
-      <img src="${member.image}" alt="${member.title}">
-      <h2>${member.title}</h2>
-      <address>${member.address}</address>
-      <p>${member.description}</p>
-      <button type="button" aria-label="Learn more about ${member.title}">Learn More</button>
-    </article>
-  `;
-}
-
-// Function to create list view markup
-function createListItem(member) {
-  return `
-    <article class="member-list-item" tabindex="0">
-      <h2>${member.title}</h2>
-      <address>${member.address}</address>
-      <p>${member.description}</p>
-    </article>
-  `;
-}
-
-// Function to assign cardX classes for grid layout
-function assignCardClasses() {
-  const cards = document.querySelectorAll('.member-card');
-  cards.forEach((card, index) => {
-    // Remove any existing cardX classes (precaution)
-    card.classList.forEach(cls => {
-      if (/^card\d+$/.test(cls)) {
-        card.classList.remove(cls);
-      }
+  ];
+  
+  // Container element — make sure this matches your HTML ID
+  const placesSection = document.getElementById('places');
+  
+  // Function to create card view markup
+  function createCard(member) {
+    return `
+      <article class="places-card" tabindex="0">
+        <img src="${member.image}" alt="${member.title}">
+        <h2>${member.title}</h2>
+        <address>${member.address}</address>
+        <p>${member.description}</p>
+        <button type="button" aria-label="Learn more about ${member.title}">Learn More</button>
+      </article>
+    `;
+  }
+  
+  // Function to create list view markup
+  function createListItem(member) {
+    return `
+      <article class="places-list-item" tabindex="0">
+        <h2>${member.title}</h2>
+        <address>${member.address}</address>
+        <p>${member.description}</p>
+      </article>
+    `;
+  }
+  
+  // Assign cardX classes for grid layout
+  function assignCardClasses() {
+    const cards = document.querySelectorAll('.places-card');
+    cards.forEach((card, index) => {
+      // Remove existing cardX classes
+      card.classList.forEach(cls => {
+        if (/^card\d+$/.test(cls)) {
+          card.classList.remove(cls);
+        }
+      });
+      // Add new cardX class
+      card.classList.add(`card${index + 1}`);
     });
-    card.classList.add(`card${index + 1}`);
+  }
+  
+  // Render in card view by default
+  function renderCardView() {
+    placesSection.classList.remove('list-view');
+    placesSection.classList.add('card-view');
+    placesSection.innerHTML = members.map(createCard).join('');
+    assignCardClasses();
+  }
+  
+  // Render in list view
+  function renderListView() {
+    placesSection.classList.remove('card-view');  // fixed typo here
+    placesSection.classList.add('list-view');
+    placesSection.innerHTML = members.map(createListItem).join('');
+  }
+  
+  // Setup event listeners for buttons
+  const cardViewBtn = document.getElementById('cardView');
+  const listViewBtn = document.getElementById('listView');
+  
+  cardViewBtn.addEventListener('click', () => {
+    renderCardView();
+    cardViewBtn.classList.add('active');
+    listViewBtn.classList.remove('active');
   });
-}
-
-// Render in card view by default
-function renderCardView() {
-  membersSection.classList.remove('list-view');
-  membersSection.classList.add('card-view');
-  membersSection.innerHTML = members.map(createCard).join('');
-  assignCardClasses();
-}
-
-// Render in list view
-function renderListView() {
-  membersSection.classList.remove('card-view');
-  membersSection.classList.add('list-view');
-  membersSection.innerHTML = members.map(createListItem).join('');
-}
-
-// Setup event listeners for buttons
-const cardViewBtn = document.getElementById('cardView');
-const listViewBtn = document.getElementById('listView');
-
-cardViewBtn.addEventListener('click', () => {
+  
+  listViewBtn.addEventListener('click', () => {
+    renderListView();
+    listViewBtn.classList.add('active');
+    cardViewBtn.classList.remove('active');
+  });
+  
+  // Initial render
   renderCardView();
-  cardViewBtn.classList.add('active');
-  listViewBtn.classList.remove('active');
-});
-
-listViewBtn.addEventListener('click', () => {
-  renderListView();
-  listViewBtn.classList.add('active');
-  cardViewBtn.classList.remove('active');
-});
-
-// Initial render
-renderCardView();
-
-// Footer date scripts
-const copyrightSpan = document.getElementById('copyright');
-const lastModifiedSpan = document.getElementById('lastModified');
-
-const year = new Date().getFullYear();
-copyrightSpan.textContent = `© ${year} Spanish Fork Chamber of Commerce`;
-
-lastModifiedSpan.textContent = `Last Updated: ${document.lastModified}`;
+  
+  // Footer date scripts
+  const copyrightSpan = document.getElementById('copyright');
+  const lastModifiedSpan = document.getElementById('lastModified');
+  
+  const year = new Date().getFullYear();
+  copyrightSpan.textContent = `© ${year} Spanish Fork Chamber of Commerce`;
+  
+  lastModifiedSpan.textContent = `Last Updated: ${document.lastModified}`;
+  
