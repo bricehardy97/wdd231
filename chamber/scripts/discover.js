@@ -49,77 +49,72 @@ const places = [
   }
 ];
 
-const placesSection = document.getElementById('places');
+const placesContainer = document.getElementById('places');
+fetch('data/discover.json')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(place => {
+      const card = document.createElement('section');
+      card.classList.add('place-card');
 
-function createCard(place) {
-  return `
-    <article class="places-card" tabindex="0">
-      <img src="${place.image}" alt="${place.title}">
-      <h2>${place.title}</h2>
-      <address>${place.address}</address>
-      <p>${place.description}</p>
-      <button type="button" aria-label="Learn more about ${place.title}">Learn More</button>
-    </article>
-  `;
-}
+      const title = document.createElement('h2');
+      title.textContent = place.title;
 
-function createListItem(place) {
-  return `
-    <article class="place-list-item" tabindex="0">
-      <h2>${place.title}</h2>
-      <address>${place.address}</address>
-      <p>${place.description}</p>
-    </article>
-  `;
-}
+      const figure = document.createElement('figure');
+      const img = document.createElement('img');
+      img.src = place.image;
+      img.alt = `Image of ${place.title}`;
+      img.loading = 'lazy';
+      figure.appendChild(img);
 
-function assignCardClasses() {
-  const cards = document.querySelectorAll('.places-card');
-  cards.forEach((card, index) => {
-    card.classList.forEach(cls => {
-      if (/^card\d+$/.test(cls)) {
-        card.classList.remove(cls);
-      }
+      const address = document.createElement('address');
+      address.textContent = place.address;
+
+      const desc = document.createElement('p');
+      desc.textContent = place.description;
+
+      const button = document.createElement('button');
+      button.textContent = 'Learn More';
+
+      card.append(title, figure, address, desc, button);
+      placesContainer.appendChild(card);
     });
-    card.classList.add(`card${index + 1}`);
   });
+
+// LocalStorage for visit message
+const messageContainer = document.getElementById('visit-message');
+const lastVisit = localStorage.getItem('lastVisit');
+const now = Date.now();
+
+if (!lastVisit) {
+  messageContainer.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+  const daysPassed = Math.floor((now - Number(lastVisit)) / (1000 * 60 * 60 * 24));
+  if (daysPassed < 1) {
+    messageContainer.textContent = "Back so soon! Awesome!";
+  } else if (daysPassed === 1) {
+    messageContainer.textContent = "You last visited 1 day ago.";
+  } else {
+    messageContainer.textContent = `You last visited ${daysPassed} days ago.`;
+  }
 }
 
-function renderCardView() {
-  placesSection.classList.remove('list-view');
-  placesSection.classList.add('card-view');
-  placesSection.innerHTML = places.map(createCard).join('');
-  assignCardClasses();
-}
+localStorage.setItem('lastVisit', now);
 
-function renderListView() {
-  placesSection.classList.remove('card-view');
-  placesSection.classList.add('list-view');
-  placesSection.innerHTML = places.map(createListItem).join('');
-}
-
+// View toggle
 const cardViewBtn = document.getElementById('cardView');
 const listViewBtn = document.getElementById('listView');
 
 cardViewBtn.addEventListener('click', () => {
-  renderCardView();
+  placesContainer.classList.add('places-grid');
+  placesContainer.classList.remove('places-list');
   cardViewBtn.classList.add('active');
   listViewBtn.classList.remove('active');
 });
 
 listViewBtn.addEventListener('click', () => {
-  renderListView();
+  placesContainer.classList.add('places-list');
+  placesContainer.classList.remove('places-grid');
   listViewBtn.classList.add('active');
   cardViewBtn.classList.remove('active');
 });
-
-// Initial render
-renderCardView();
-
-// Footer date scripts
-const copyrightSpan = document.getElementById('copyright');
-const lastModifiedSpan = document.getElementById('lastModified');
-
-const year = new Date().getFullYear();
-copyrightSpan.textContent = `© ${year} Spanish Fork Chamber of Commerce`;
-lastModifiedSpan.textContent = `Last Updated: ${document.lastModified}`;
