@@ -1,0 +1,109 @@
+
+[
+    {
+      "id": 1,
+      "title": "Standard Snow Goose Hunt",
+      "description": "A classic guided hunt for beginners and experts alike. Includes gear and lodging.",
+      "price": "$850",
+      "image": "images/hunt1.webp"
+    },
+    {
+      "id": 2,
+      "title": "Extended Snow Goose Adventure",
+      "description": "Five-day guided hunt with meals included. Perfect for serious hunters.",
+      "price": "$2,100",
+      "image": "images/hunt2.webp"
+    },
+    {
+      "id": 3,
+      "title": "Family Group Hunt",
+      "description": "Bring the family! Safe and fun environment with multiple guides.",
+      "price": "$1,500",
+      "image": "images/hunt3.webp"
+    },
+    {
+      "id": 4,
+      "title": "Weekend Express Hunt",
+      "description": "Two-day fast-paced hunt for those short on time but big on fun.",
+      "price": "$650",
+      "image": "images/hunt4.webp"
+    },
+    {
+      "id": 5,
+      "title": "Premium Private Hunt",
+      "description": "Private guide and exclusive areas for a personalized hunting experience.",
+      "price": "$3,200",
+      "image": "images/hunt5.webp"
+    },
+    {
+      "id": 6,
+      "title": "Youth Snow Goose Hunt",
+      "description": "Special youth-focused package with training and safety briefings.",
+      "price": "$500",
+      "image": "images/hunt6.webp"
+    },
+    {
+      "id": 7,
+      "title": "Corporate Group Hunt",
+      "description": "Team building outdoor adventure for corporate groups up to 10 people.",
+      "price": "$4,500",
+      "image": "images/hunt7.webp"
+    },
+    {
+      "id": 8,
+      "title": "Photographer's Hunt",
+      "description": "Capture the beauty of the hunt with expert guidance and photo spots.",
+      "price": "$900",
+      "image": "images/hunt8.webp"
+    },
+    {
+      "id": 9,
+      "title": "Beginner’s Workshop Hunt",
+      "description": "Includes hunting lessons and hands-on guided experience.",
+      "price": "$700",
+      "image": "images/hunt9.webp"
+    },
+    {
+      "id": 10,
+      "title": "Winter Survival Hunt",
+      "description": "Hunt while learning essential survival skills in winter conditions.",
+      "price": "$1,800",
+      "image": "images/hunt10.webp"
+    },
+    {
+      "id": 11,
+      "title": "All-Inclusive Luxury Hunt",
+      "description": "Luxury accommodations, gourmet meals, and premium gear provided.",
+      "price": "$5,000",
+      "image": "images/hunt11.webp"
+    },
+    {
+      "id": 12,
+      "title": "Solo Hunter Special",
+      "description": "Personal guide for the solo hunter wanting a focused experience.",
+      "price": "$1,200",
+      "image": "images/hunt12.webp"
+    },
+    {
+      "id": 13,
+      "title": "Early Season Hunt",
+      "description": "Beat the crowd with early season access to prime hunting grounds.",
+      "price": "$1,000",
+      "image": "images/hunt13.webp"
+    },
+    {
+      "id": 14,
+      "title": "Late Season Discount Hunt",
+      "description": "Affordable option for hunters flexible with dates towards the season end.",
+      "price": "$650",
+      "image": "images/hunt14.webp"
+    },
+    {
+      "id": 15,
+      "title": "Weekend Family Package",
+      "description": "Fun-filled family weekend with guided hunts and educational programs.",
+      "price": "$1,100",
+      "image": "images/hunt15.webp"
+    }
+  ]
+  

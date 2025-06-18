@@ -1,0 +1,129 @@
+/* --- Add to final.css or a new hunts.css --- */
+
+/* Hero Section */
+:root {
+    --main-color: #023e8a;   /* Example main blue */
+    --accent-color: #0077b6; /* Accent color */
+  }
+  
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(2, 62, 138, 0.75);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .hero-text p {
+    font-size: 1.25rem;
+  }
+  
+  /* Hunts List Section */
+  .hunts-list {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  /* Individual Hunt Card */
+  .hunt-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .hunt-card:hover,
+  .hunt-card:focus-within {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  }
+  
+  .hunt-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    height: 160px;
+  }
+  
+  .hunt-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--main-color);
+  }
+  
+  .hunt-card p {
+    flex-grow: 1;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .hunt-card .price {
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .hunt-card button.details-btn {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hunt-card button.details-btn:hover,
+  .hunt-card button.details-btn:focus {
+    outline: 2px solid #90caf9; /* or a color that contrasts well */
+    outline-offset: 2px;
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .hero-text h2 {
+      font-size: 1.75rem;
+    }
+    .hero-text p {
+      font-size: 1rem;
+    }
+    .hunt-card img {
+      height: 140px;
+    }
+  }
+  
