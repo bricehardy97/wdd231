@@ -150,7 +150,6 @@
   .about h2 {
     margin-bottom: 3rem;
     font-size: 2rem;
-    position: center;
     justify-content: center;
     text-align: center;
   }
@@ -161,7 +160,6 @@
     margin-bottom: 4rem;
     margin-top: 4rem;
     text-align: center;
-    position: center;
     justify-content: center;
   }
   
