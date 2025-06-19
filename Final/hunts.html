@@ -22,12 +22,12 @@
       <h1>Yukon Snow Goose Hunts</h1>
     </div>
     <nav>
-      <button id="menu-toggle">☰</button>
+      <button id="menu-toggle" aria-label="Toggle menu">☰</button>
       <ul id="menu" class="hidden">
-        <li><a href="final.html">Home</a></li>
-        <li><a href="hunts.html" class="active">Hunts</a></li>
-        <li><a href="book.html">Book a Hunt</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hunts.html" class="active">Our Hunts</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    
       </ul>
     </nav>
   </header>
@@ -54,11 +54,25 @@
       <h2>Ready to Book?</h2>
       <a href="book.html" class="btn">Schedule Your Hunt</a>
     </section>
+
+    <!-- Hunt Details Modal -->
+    <div id="hunt-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <button id="modal-close" aria-label="Close details">&times;</button>
+        <h3 id="modal-title"></h3>
+        <img id="modal-image" src="" alt="" />
+        <p id="modal-description"></p>
+        <div id="modal-price" class="price"></div>
+      </div>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Yukon Snow Goose Hunts</p>
-    <p><a href="attribution.html">Attributions</a> | <a href="https://yourvideolink.com">Video Demo</a></p>
+    <p>
+      <a href="attribution.html">Attributions</a> |
+      <a href="https://yourvideolink.com">Video Demo</a>
+    </p>
   </footer>
 
   <script type="module">
@@ -67,7 +81,6 @@
       displayHunts();
     });
   </script>
-  </body>
+</body>
 
 </html>
-
