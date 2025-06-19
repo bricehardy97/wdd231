@@ -55,3 +55,5 @@ const courses = [
    
     displayCourses(courses);
   });
+
+  
